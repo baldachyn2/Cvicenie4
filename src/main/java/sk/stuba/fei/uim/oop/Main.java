@@ -1,28 +1,20 @@
 package sk.stuba.fei.uim.oop;
 
+import sk.stuba.fei.uim.oop.utility.ZKlavesnice;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> arraylist = new ArrayList<>();
-        arraylist.add(0,"bengoro");
-        arraylist.add(1,"skr skr");
-        for (var i : arraylist){
-            System.out.println(i);
+        Scanner scanner=new Scanner(System.in);
+        List<String> list= new ArrayList<>();
+        for (int i =0;i<4;i++){
+            String s = scanner.next();
+            list.add(s);
         }
-        List<Integer> arraylist2 = new ArrayList<>();
-        arraylist2.add(0,146);
-        arraylist2.add(0,0);
-
-        for (var i : arraylist2){
-            System.out.println(i);
-        }
-
-        ArrayList<pes> pes = new ArrayList<>();
-        pes.add(new pes("dunco"));
-        pes.add(new pes("bengorbarber"));
-        for (var i : pes){
+        for (var i : list){
             System.out.println(i);
         }
     }
